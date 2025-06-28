@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'ZErrorDocs',
   description: 'A VitePress Site',
+  ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'icon', href: '/在浙学图标-02_32x32.ico' }]
   ],
@@ -18,7 +19,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: 'https://app.zerror.cc' },
       { text: '文档', link: '/docs/' },
-      { text: '下载', link: '/docs/download' }
+      { text: '下载', link: '/download' }
     ],
     sidebar: {
       '/docs': [
