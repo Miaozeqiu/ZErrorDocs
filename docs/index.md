@@ -1,26 +1,17 @@
 ---
 layout: home
-
-hero:
-  name: "ZErrorDocs"
-  text: "VitePress 文档站点"
-  tagline: 欢迎来到我的文档网站
-  image:
-    src: /favicon.ico
-    alt: ZErrorDocs Logo
-  actions:
-    - theme: brand
-      text: 开始阅读
-      link: /guide/
-    - theme: alt
-      text: 在 GitHub 上查看
-      link: https://github.com
-
-features:
-  - title: 📝 简洁明了
-    details: 专注于内容创作，提供清晰的文档结构
-  - title: ⚡ 快速响应
-    details: 基于 Vite 构建，享受极速的开发体验
-  - title: 🎨 美观设计
-    details: 现代化的界面设计，提供优秀的阅读体验
 ---
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  // 自动重定向到外部链接
+  window.location.href = 'https://app.zerror.cc'
+})
+</script>
+
+<div style="text-align: center; padding: 50px;">
+  <h1>正在跳转到 ZError 应用...</h1>
+  <p>如果没有自动跳转，请点击 <a href="https://app.zerror.cc">这里</a></p>
+</div>
