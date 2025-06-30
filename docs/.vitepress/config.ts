@@ -17,9 +17,9 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: '首页', link: 'https://app.zerror.cc' },
-      { text: '文档', link: '/docs/' },
-      { text: '下载', link: '/download' }
+      { text: '首页', link: 'https://app.zerror.cc', target: '_self', rel: '' },
+      { text: '文档', link: '/docs/introduction' },
+      { text: '下载', link: '/docs/download' }
     ],
     sidebar: {
       '/docs': [
@@ -49,7 +49,10 @@ export default defineConfig({
         }
       ],
 
-    }
+    },
+        socialLinks: [
+      { icon: 'github', link: 'https://github.com/Miaozeqiu/ZError/' }
+    ]
   },
 cleanUrls: true,  // 开启 cleanUrls 功能
 })

@@ -1,5 +1,4 @@
 # 题库配置
-> ✨完全适配OCS
 
 
 ## ⚙️题库配置
@@ -26,7 +25,7 @@
 :::
 
 ::: warning 方案二 (推荐)
-你可以点击下方按钮将你目前使用的OCS脚本修改，以适用ZError题库。不过在每次ocs版本更新时，都需要再次手动修改
+你可以点击下方按钮将你目前使用的OCS脚本修改，以适用ZError题库。不过在每次ocs版本更新时，都需要再次点击这个按钮安装
 <ClientOnly>
     <button class="test-api-button" style="margin-left: 10px; background-color: #2196F3;" onclick="window.open('https://ocs.csid.cc/OCS%E7%BD%91%E8%AF%BE%E5%8A%A9%E6%89%8B.user.js','_blank')">
       点击安装
