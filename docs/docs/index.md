@@ -1,23 +1,50 @@
-# ZError
+# 项目简介
+<div align="center">
 
-欢迎来到 ZError 项目文档！
+<a><img src="/favicon.ico" width="120" height="120" /></a> 
 
-ZError 是一个强大的错误处理和调试工具，旨在帮助开发者更好地管理和追踪应用程序中的错误。
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <h1>ZError</h1>
+    <a href="https://github.com/Miaozeqiu/ZError">
+    <img src="https://img.shields.io/github/stars/Miaozeqiu/ZError" alt="GitHub Stars"/>
+    </a>
+</div>
 
-## 主要特性
+> 支持OCS的AI题库，为网课提供AI题库支持
 
-- 🔍 **智能错误检测** - 自动识别和分类各种类型的错误
-- 📊 **详细错误报告** - 提供完整的错误堆栈和上下文信息
-- 🚀 **性能优化** - 轻量级设计，不影响应用性能
-- 🔧 **易于集成** - 简单的API，快速集成到现有项目
-- 📱 **多平台支持** - 支持Web、移动端和桌面应用
 
-## 快速导航
 
-- [项目简介](./introduction) - 了解ZError的详细介绍
-- [快速开始](./getting-started) - 快速上手指南
-- [使用指南](./guide) - 详细的使用说明
 
-## 开始使用
+</div>
 
-点击左侧导航栏中的相应链接，开始探索ZError的强大功能！
+ZError 是一个利用AI进行题库接口搭建，以适配OCS插件的一项题库解决方案，具体包括本地题库软件以及在线题库。
+
+## 核心功能
+
+### 🔍 AI题库
+- 用预设的提示词返回适配OCS的答案
+- 将历史查询题目缓存到本地题库
+- 截图调用AI解析
+- 自义定端口对局域网开放
+
+### 📖 本地题库管理
+- 对本地题库的增删改查
+- 利用文件夹系统对题目进行分类
+
+
+## 技术特点
+
+- **轻量级**：打包后体积只有10M
+- **跨平台**：.NET8支持Windows、Linux、macOS等主流操作系统
+- **隐私保护**：除了AI平台接口外，无任何第三方接口调用
+- **可扩展**：`/`路由统一调用AI，为其他脚本开发提供便利
+
+
+## 为什么选择 ZError？
+
+1. **简单易用**：图形化操作，教程文档详细
+2. **功能强大**：支持截图搜题，题库缓存
+3. **性能优异**：Windows原生框架开发
+4. **持续更新**：定期发布新功能和性能优化
+
+开始使用ZError，让OCS插件的使用更加便利！
