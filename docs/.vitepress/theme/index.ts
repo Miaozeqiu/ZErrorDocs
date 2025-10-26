@@ -4,6 +4,7 @@ import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
 import './custom.css'
+import WorkspaceToggle from './components/WorkspaceToggle.vue'
 
 export default {
   extends: DefaultTheme,
@@ -13,6 +14,7 @@ export default {
     });
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    // 注册全局组件
+    app.component('WorkspaceToggle', WorkspaceToggle)
   },
 } satisfies Theme;

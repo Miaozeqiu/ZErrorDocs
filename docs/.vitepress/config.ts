@@ -44,7 +44,8 @@ export default defineConfig({
             text: '本地题库',
             items: [
                 { text: '软件使用', link: '/docs/local/howtouse' },
-                { text: 'API', link: '/docs/local/API' }
+                { text: 'API', link: '/docs/local/API' },
+                { text: '模型配置', link: '/docs/local/modelConfig' }
             ]
         }
       ],
