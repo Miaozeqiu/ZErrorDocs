@@ -45,7 +45,8 @@ export default defineConfig({
             items: [
                 { text: '软件使用', link: '/docs/local/howtouse' },
                 { text: 'API', link: '/docs/local/API' },
-                { text: '模型配置', link: '/docs/local/modelConfig' }
+                { text: '模型配置', link: '/docs/local/modelConfig' },
+                { text: '局域网访问', link: '/docs/local/LAN' }
             ]
         }
       ],
