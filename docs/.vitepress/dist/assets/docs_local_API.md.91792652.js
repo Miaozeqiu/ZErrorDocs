@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o,b as a}from"./app.7eedfda2.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/local/API.md"}'),s={name:"docs/local/API.md"},c=a("p",null,"\u7B49\u5F85\u7F16\u5199",-1),n=[c];function r(_,d,l,p,i,m){return t(),o("div",null,n)}const h=e(s,[["render",r]]);export{u as __pageData,h as default};

@@ -28,8 +28,7 @@ export default defineConfig({
           items: [
             { text: '项目简介', link: '/docs/introduction' },
             { text: '快速开始', link: '/docs/get-started' },
-            { text: '下载', link: '/docs/download' },
-            { text: '获取API Key', link: '/docs/get-apiKey' },
+
           ]
         },
 
@@ -44,6 +43,7 @@ export default defineConfig({
             text: '本地题库',
             items: [
                 { text: '软件使用', link: '/docs/local/howtouse' },
+                { text: '获取API Key', link: '/docs/get-apiKey' },
                 { text: 'API', link: '/docs/local/API' },
                 { text: '模型配置', link: '/docs/local/modelConfig' },
                 { text: '局域网访问', link: '/docs/local/LAN' }
