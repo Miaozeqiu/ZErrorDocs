@@ -49,6 +49,12 @@ export default defineConfig({
                 { text: '模型配置', link: '/docs/local/modelConfig' },
                 { text: '局域网访问', link: '/docs/local/LAN' }
             ]
+        },
+        {
+            text: '其他',
+            items: [
+                { text: '联系', link: '/docs/others/contact' },
+            ]
         }
       ],
 
