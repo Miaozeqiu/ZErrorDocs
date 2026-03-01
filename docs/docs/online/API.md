@@ -1,126 +1,65 @@
-# 题库配置
+# OCS网课助手使用教程
 
+## 步骤1：安装浏览器扩展-脚本猫
 
-## ⚙️题库配置
-[ZError在线题库](https://tiku.zerror.cc)的 `我的>题库配置`界面，你会看到你的配置数据，它完全兼容OCS，你可以直接复制到OCS题库配置界面。
 <div class="pic">
-<img src="/images/question_bank_settings.png" alt="题库配置" />
+<img src="/images/安装浏览器扩展.png" alt="安装浏览器扩展" />
 </div>
 
-添加到ocs的方法如下:
+
+<div class="pic">
+<img src="/images/安装脚本猫.png" alt="安装脚本猫" />
+</div>
+
+## 步骤2：浏览器设置-打开开发人员模式
+
+<div class="pic">
+<img src="/images/打开开发者模式1.png" alt="打开开发者模式1" />
+</div>
+
+打开开发者模式，然后点击脚本猫的**详细信息**
+
+<div class="pic">
+<img src="/images/打开开发者模式2.png" alt="打开开发者模式2" />
+</div>
+
+确保**允许用户脚本**选项已勾选
+
+<div class="pic">
+<img src="/images/允许用户脚本.png" alt="允许用户脚本" />
+</div>
+
+## 步骤3：安装OCS网课助手
+完成第一步后，点击[OCS网课助手](https://scriptcat.org/zh-CN/script-show-page/367)，即可安装OCS网课助手。
+
+## 步骤4：题库配置
+[ZError在线题库](https://tiku.zerror.cc)的 `我的>题库配置`界面，你会看到你的配置数据，默认有200次调用次数。
+<div class="pic">
+<img src="/images/题库配置.png" alt="题库配置" />
+</div>
+
+打开学习通或其他支持的网课界面，会自动弹出OCS网课助手的界面，题库配置添加到ocs的方法如下:
 <div class="pic">
   <img src="/images/添加配置.gif" alt="添加到ocs" />
 </div>
 
-## ⚠️警告弹窗
-在不使用OCS桌面软件的情况下，我们遇到这样的警告弹窗。我们必须解决这个警告，否则题库会连接失败。有下面三种方案可以选择。
+
+::: warning 注意
+ 所有跨域提示，请选择永久允许，否则题库无法使用。题库连接失败请联系开发者QQ2669624618
+:::
+
+## 校园题库-和同学分享
+> ZError提供了校园题库，你可以使用它，方便地和你的同学分享你的题库！  
+
+- OCS优先调用  
+- 不会消耗次数
+- 只用同校同学可以查看编辑
+  
+你可以在ZError在线题库的 `我的>校园题库`界面，查看和管理你的校园题库。
+具体使用查看[校园题库](./campus-question-bank.md#如何快速上传题目)
 <div class="pic">
-<img src="/images/warning.png" alt="警告弹窗" />
+  <img src="/images/校园题库.png" alt="校园题库" />
 </div>
-
-
-
-::: warning 方案一
-你可以按照提示安装ocs全域名版，这个版本与普通版一样是免费的。不过因为网络原因你可能会打不开链接，而脚本猫也没有这个版本。
-:::
-
-::: warning 方案二 (推荐)
-你可以点击下方按钮将你目前使用的OCS脚本修改，以适用ZError题库。
-<ClientOnly>
-    <button class="test-api-button" style="margin-left: 10px; background-color: #2196F3;" onclick="window.open('https://ocs.csid.cc/OCS%E7%BD%91%E8%AF%BE%E5%8A%A9%E6%89%8B.user.js','_blank')">
-      点击安装
-    </button>
-</ClientOnly>
-:::
-
-
-::: warning 方案三
-1. 参照动图打开脚本的代码页
-
-<div class="pic">
-<img src="/images/编辑.gif" alt="编辑" />
-</div>
-
-2. 添加这一行代码
-``` javascript
-// @connect                 api.zaizhexue.top
-```
-<div class="pic" style="margin-top: 10px;">
-<img src="/images/add_domain.png" alt="添加域名" />
-</div>
-
-
-
-3.切记改完后ctrl+s保存。上面两个方法的原理是一样的。
-
-:::
-### 注意
- 所有跨域提示，请选择永久允许，否则题库无法使用。
-
-
-## 🤯仍然连接失败
-如果你经过上面的操作，仍然显示连接失败，请你点击下方按钮测试连接
-
-
-<ClientOnly>
-  <div class="api-test">
-    <button class="test-api-button" onclick="testApiConnection()">
-      测试API连接
-    </button>
-    <p class="test-result" id="testResult"></p>
-  </div>
-</ClientOnly>
-
-如果api可以正常连接，但仍然显示连接失败，请你联系开发者帮助配置QQ2669624618
-<style>
-.test-api-button {
-  padding: 10px 20px;
-  background-color:rgb(90, 215, 94);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.test-result {
-  margin-top: 10px;
-}
-</style>
-
-<script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  if (typeof window !== 'undefined') {
-    window.testApiConnection = function() {
-      const result = document.getElementById('testResult');
-      if (result) {
-        result.textContent = '测试中...';
-        result.style.color = '#666666';
-        
-        fetch('https://api.zaizhexue.top/', {
-          method: 'GET',
-          mode: 'cors'
-        })
-        .then(response => {
-          if (response.ok) {
-            result.innerHTML = '✅ API 连接正常！';
-            result.style.color = '#4CAF50';
-          } else {
-            throw new Error('API 响应异常');
-          }
-        })
-        .catch(error => {
-          result.innerHTML = '❌ API 连接失败，请联系开发者QQ2669624618';
-          result.style.color = '#f44336';
-        });
-      }
-    };
-  }
-});
-</script>
-
-
-
 
 
 

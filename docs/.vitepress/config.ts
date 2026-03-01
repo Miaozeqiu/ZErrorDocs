@@ -35,8 +35,8 @@ export default defineConfig({
         {
           text: '在线题库',
           items: [
-            { text: '题库配置', link: '/docs/online/API' },
-            { text: '校园题库', link: '/docs/online/campus-question-bank' },
+            { text: 'OCS网课助手使用教程', link: '/docs/online/API' },
+            { text: '校园题库🔥', link: '/docs/online/campus-question-bank' },
             { text: '在线题库API说明', link: '/docs/online/API-Documentation' }
           ]
         },
