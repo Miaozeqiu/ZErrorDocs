@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
   title: 'ZErrorDocs',
-  description: 'A VitePress Site',
+  description: 'ZError-网课AI题库',
   ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'icon', href: '/在浙学图标-02_32x32.ico' }]
