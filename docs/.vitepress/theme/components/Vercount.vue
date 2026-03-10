@@ -17,7 +17,7 @@ async function fetchCount() {
   pv.value = '--'
   try {
     const url = encodeURIComponent(window.location.href)
-    const res = await fetch(`https://api.vercount.one/query?jsonpCallback=handleVercount&url=${url}`)
+    const res = await fetch(`https://cn.vercount.one/query?jsonpCallback=handleVercount&url=${url}`)
     const text = await res.text()
     // 响应格式: handleVercount({"site_pv":...,"page_pv":...,"site_uv":...})
     const match = text.match(/handleVercount\((.+)\)/)
