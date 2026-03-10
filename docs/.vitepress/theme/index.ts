@@ -22,6 +22,8 @@ export default {
     app.component('Vercount', Vercount)
     if (inBrowser) {
       router.onAfterPageLoad = () => {
+        const el = document.getElementById('vercount_value_page_pv')
+        if (el) el.textContent = 'Loading'
         useVisitData()
       }
     }
