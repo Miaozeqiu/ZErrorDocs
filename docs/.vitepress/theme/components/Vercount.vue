@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import { useRoute } from 'vitepress'
+import { ref, onMounted } from 'vue'
+import { useData } from 'vitepress'
 
-const route = useRoute()
+const { page } = useData()
 const pagePV = ref('Loading')
 
 async function fetchPagePV() {
@@ -26,7 +26,9 @@ async function fetchPagePV() {
   }
 }
 
-watch(() => route.path, () => {
+// 监听 page.relativePath 变化（VitePress alpha 兼容）
+import { watch } from 'vue'
+watch(() => page.value.relativePath, () => {
   fetchPagePV()
 }, { immediate: true })
 </script>
