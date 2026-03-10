@@ -35,9 +35,9 @@ onMounted(() => {
 })
 
 // 路由切换时重新获取
-if (typeof window !== 'undefined') {
+onMounted(() => {
   window.addEventListener('vitepress:route-change', fetchCount)
-}
+})
 </script>
 
 <style scoped>

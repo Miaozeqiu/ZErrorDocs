@@ -21,7 +21,9 @@ export default {
     app.component('Vercount', Vercount)
     // 路由切换时触发 Vercount 刷新
     router.onAfterRouteChanged = (to) => {
-      window.dispatchEvent(new Event('vitepress:route-change'))
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new Event('vitepress:route-change'))
+      }
     }
   },
 } satisfies Theme;
