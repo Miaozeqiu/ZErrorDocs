@@ -1,7 +1,40 @@
+<script setup lang="ts">
+import { ref, watch } from 'vue'
+import { useRoute } from 'vitepress'
+
+const route = useRoute()
+const pagePV = ref('Loading')
+
+async function fetchPagePV() {
+  pagePV.value = 'Loading'
+  try {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 5000)
+    const res = await fetch('https://events.vercount.one/api/v2/log', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: window.location.href }),
+      signal: controller.signal
+    })
+    clearTimeout(timeout)
+    if (!res.ok) return
+    const json = await res.json()
+    const data = json.status === 'success' && json.data ? json.data : json.data || {}
+    if (data.page_pv !== undefined) pagePV.value = String(data.page_pv)
+  } catch (e) {
+    pagePV.value = '-'
+  }
+}
+
+watch(() => route.path, () => {
+  fetchPagePV()
+}, { immediate: true })
+</script>
+
 <template>
   <div class="vercount-container">
     <span class="vercount-text">
-      本页阅读量 <span id="vercount_value_page_pv" class="vercount-pv">Loading</span> 次
+      本页阅读量 <span class="vercount-pv">{{ pagePV }}</span> 次
     </span>
   </div>
 </template>
