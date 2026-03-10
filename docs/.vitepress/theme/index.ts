@@ -1,11 +1,13 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from "vue";
-import type { Theme } from "vitepress";
+import type { Theme, EnhanceAppContext } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+import { inBrowser } from 'vitepress';
 import "./style.css";
 import './custom.css'
 import WorkspaceToggle from './components/WorkspaceToggle.vue'
 import Vercount from './components/Vercount.vue'
+import useVisitData from './hooks/useVisitData'
 
 export default {
   extends: DefaultTheme,
@@ -15,14 +17,12 @@ export default {
       'doc-footer-before': () => h(Vercount),
     });
   },
-  enhanceApp({ app, router, siteData }) {
-    // 注册全局组件
+  enhanceApp({ app, router, siteData }: EnhanceAppContext) {
     app.component('WorkspaceToggle', WorkspaceToggle)
     app.component('Vercount', Vercount)
-    // 路由切换时触发 Vercount 刷新
-    router.onAfterRouteChanged = (to) => {
-      if (typeof window !== 'undefined') {
-        window.dispatchEvent(new Event('vitepress:route-change'))
+    if (inBrowser) {
+      router.onAfterPageLoad = () => {
+        useVisitData()
       }
     }
   },
