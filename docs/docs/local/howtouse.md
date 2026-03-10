@@ -4,11 +4,11 @@
 ## 软件设置
 软件下载可以访问这个地址[下载](/docs/download.md)，下载好后进入软件设置
 
-填入相应平台的API Key，这里的APIkey获取可以查看[获取API Key](./Get-APIKey.md)
+填入相应平台的API Key，这里的APIkey获取可以查看[获取API Key](/docs/get-apiKey)
 
 <div class="pic">
 
-<img src="/images/填写APIKey.png" alt="images/填写APIKey.png" />
+<img src="/images/填写APIkey.png" alt="images/填写APIkey.png" />
 
 </div>
 
