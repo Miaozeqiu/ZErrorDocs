@@ -1,5 +1,5 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from "vue";
+import { h, nextTick } from "vue";
 import type { Theme, EnhanceAppContext } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { inBrowser } from 'vitepress';
@@ -22,9 +22,11 @@ export default {
     app.component('Vercount', Vercount)
     if (inBrowser) {
       router.onAfterPageLoad = () => {
-        const el = document.getElementById('vercount_value_page_pv')
-        if (el) el.textContent = 'Loading'
-        useVisitData()
+        nextTick(() => {
+          const el = document.getElementById('vercount_value_page_pv')
+          if (el) el.textContent = 'Loading'
+          useVisitData()
+        })
       }
     }
   },
