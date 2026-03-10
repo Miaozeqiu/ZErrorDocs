@@ -6,7 +6,8 @@ export default defineConfig({
   description: 'ZError-网课AI题库',
   ignoreDeadLinks: true,
   head: [
-    ['link', { rel: 'icon', href: '/在浙学图标-02_32x32.ico' }]
+    ['link', { rel: 'icon', href: '/在浙学图标-02_32x32.ico' }],
+    ['script', { defer: '', async: '', src: 'https://cn.vercount.one/js' }]
   ],
   markdown: {
     theme: {
