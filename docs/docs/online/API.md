@@ -1,5 +1,7 @@
 # OCS网课助手使用教程
 
+> 文字版教程: https://docs.zerror.cc/docs/online/API
+
 ## 步骤1：安装浏览器扩展-脚本猫
 
 <div class="pic">
@@ -30,15 +32,15 @@
 </div>
 
 ## 步骤3：安装OCS网课助手
-完成第一步后，点击[OCS网课助手](https://scriptcat.org/zh-CN/script-show-page/367)，即可安装OCS网课助手。
+完成第一步后，点击[OCS网课助手](https://scriptcat.org/zh-CN/script-show-page/367)，即可安装OCS网课助手。当然也可以找到OCS的脚本猫页面(https://scriptcat.org/zh-CN/script-show-page/367)，安装脚本。
 
 ## 步骤4：题库配置
-[ZError在线题库](https://tiku.zerror.cc)的 `我的>题库配置`界面，你会看到你的配置数据，默认有200次调用次数。
+在[ZError在线题库](https://tiku.zerror.cc)tiku.zerror.cc的 `我的>题库配置`界面，你会看到你的配置数据，默认有200次调用次数。
 <div class="pic">
 <img src="/images/题库配置.png" alt="题库配置" />
 </div>
 
-打开学习通或其他支持的网课界面，会自动弹出OCS网课助手的界面，题库配置添加到ocs的方法如下:
+打开学习通或其他支持的网课界面，会自动弹出OCS网课助手的界面，题库配置添加到ocs的方法如下: `通用`>`全局配置`>`题库配置` 粘贴你保存的配置，然后点击保存即可。
 <div class="pic">
   <img src="/images/添加配置.gif" alt="添加到ocs" />
 </div>
