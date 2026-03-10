@@ -1,44 +1,10 @@
 <template>
   <div class="vercount-container">
     <span class="vercount-text">
-      本页阅读量 <span class="vercount-pv">{{ pv }}</span> 次
+      本页阅读量 <span id="vercount_value_page_pv" class="vercount-pv">Loading</span> 次
     </span>
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vitepress'
-
-const route = useRoute()
-const pv = ref<string | number>('--')
-
-async function fetchCount() {
-  pv.value = '--'
-  try {
-    const url = encodeURIComponent(window.location.href)
-    const res = await fetch(`https://cn.vercount.one/query?jsonpCallback=handleVercount&url=${url}`)
-    const text = await res.text()
-    // 响应格式: handleVercount({"site_pv":...,"page_pv":...,"site_uv":...})
-    const match = text.match(/handleVercount\((.+)\)/)
-    if (match) {
-      const data = JSON.parse(match[1])
-      pv.value = data.page_pv ?? '--'
-    }
-  } catch {
-    pv.value = '--'
-  }
-}
-
-onMounted(() => {
-  fetchCount()
-})
-
-// 路由切换时重新获取
-onMounted(() => {
-  window.addEventListener('vitepress:route-change', fetchCount)
-})
-</script>
 
 <style scoped>
 .vercount-container {
