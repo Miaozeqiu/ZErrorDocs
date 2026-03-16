@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "WebFetch(domain:vitepress.dev)",
+      "Bash(curl -s 'https://vitepress.dev/zh/guide/sitemap-generation' --max-time 10)",
+      "Bash(npm show:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

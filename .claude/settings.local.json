@@ -6,7 +6,8 @@
       "WebFetch(domain:edgeone.ai)",
       "WebSearch",
       "WebFetch(domain:docs.versiw.com)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:cn.vercount.one)"
     ]
   }
 }
