@@ -65,4 +65,7 @@ export default defineConfig({
     ]
   },
 cleanUrls: true,  // 开启 cleanUrls 功能
+  sitemap: {
+    hostname: 'https://docs.zerror.cc'
+  }
 })
