@@ -32,7 +32,7 @@
 </div>
 
 ## 步骤3：安装OCS网课助手
-完成第一步后，点击[OCS网课助手](https://scriptcat.org/zh-CN/script-show-page/367)，即可安装OCS网课助手。当然也可以找到OCS的脚本猫页面(https://scriptcat.org/zh-CN/script-show-page/367)，安装脚本。
+完成第一步后，点击[OCS网课助手](https://cdn.ocsjs.com/ocs.user.js)，即可安装OCS网课助手。
 
 ## 步骤4：题库配置
 在[ZError在线题库](https://tiku.zerror.cc)tiku.zerror.cc的 `我的>题库配置`界面，你会看到你的配置数据，默认有200次调用次数。
