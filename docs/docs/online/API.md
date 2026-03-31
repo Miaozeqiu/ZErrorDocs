@@ -1,6 +1,6 @@
 # OCS网课助手使用教程
 
-> 文字版教程: https://docs.zerror.cc/docs/online/API
+> 文字版教程: https://docs.zerror.cc/online/API
 
 ## 步骤1：安装浏览器扩展-脚本猫
 
@@ -32,7 +32,7 @@
 </div>
 
 ## 步骤3：安装OCS网课助手
-完成第一步后，点击[OCS网课助手](https://cdn.ocsjs.com/ocs.user.js)，即可安装OCS网课助手。
+完成第一步后，点击[OCS网课助手](https://cdn.ocsjs.com/ocs.user.js)，即可安装OCS网课助手。你也可以手动打开https://cdn.ocsjs.com/ocs.user.js 安装
 
 ## 步骤4：题库配置
 在[ZError在线题库](https://tiku.zerror.cc)tiku.zerror.cc的 `我的>题库配置`界面，你会看到你的配置数据，默认有200次调用次数。
