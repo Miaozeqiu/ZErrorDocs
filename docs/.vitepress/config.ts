@@ -16,19 +16,24 @@ export default defineConfig({
     },
     lineNumbers: false
   },
+  rewrites: {
+    'legacy/:rest*': 'docs/:rest*',
+    'docs/index.md': 'docs/index.md',
+    'docs/:rest*': ':rest*'
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: 'https://app.zerror.cc', target: '_self', rel: '' },
-      { text: '文档', link: '/docs/introduction' },
-      { text: '下载', link: '/docs/download' }
+      { text: '文档', link: '/introduction' },
+      { text: '下载', link: '/download' }
     ],
     sidebar: {
-      '/docs': [
+      '/': [
         {
           text: 'ZError',
           items: [
-            { text: '项目简介', link: '/docs/introduction' },
-            { text: '快速开始', link: '/docs/get-started' },
+            { text: '项目简介', link: '/introduction' },
+            { text: '快速开始', link: '/get-started' },
 
           ]
         },
@@ -36,25 +41,25 @@ export default defineConfig({
         {
           text: '在线题库',
           items: [
-            { text: 'OCS网课助手使用教程', link: '/docs/online/API' },
-            { text: '校园题库🔥', link: '/docs/online/campus-question-bank' },
-            { text: '在线题库API说明', link: '/docs/online/API-Documentation' }
+            { text: 'OCS网课助手使用教程', link: '/online/API' },
+            { text: '校园题库🔥', link: '/online/campus-question-bank' },
+            { text: '在线题库API说明', link: '/online/API-Documentation' }
           ]
         },
         {
             text: '本地题库',
             items: [
-                { text: '软件使用', link: '/docs/local/howtouse' },
-                { text: '获取API Key', link: '/docs/get-apiKey' },
-                { text: 'API', link: '/docs/local/API' },
-                { text: '模型配置', link: '/docs/local/modelConfig' },
-                { text: '局域网访问', link: '/docs/local/LAN' }
+                { text: '软件使用', link: '/local/howtouse' },
+                { text: '获取API Key', link: '/get-apiKey' },
+                { text: 'API', link: '/local/API' },
+                { text: '模型配置', link: '/local/modelConfig' },
+                { text: '局域网访问', link: '/local/LAN' }
             ]
         },
         {
             text: '其他',
             items: [
-                { text: '联系', link: '/docs/others/contact' },
+                { text: '联系', link: '/others/contact' },
             ]
         }
       ],
