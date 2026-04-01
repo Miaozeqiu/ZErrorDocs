@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs && node scripts/copy-for-edgeone.js",
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
