@@ -16,11 +16,13 @@ export default defineConfig({
     },
     lineNumbers: false
   },
-  rewrites: {
-    'legacy/:rest*': 'docs/:rest*',
-    'docs/index.md': 'docs/index.md',
-    'docs/:rest*': ':rest*'
-  },
+  // rewrites 只在开发服务器生效，部署到 EdgeOne 时会被忽略
+  // 确保 /docs/ 路径仍然可用（通过实际的 docs/ 目录文件）
+  // rewrites: {
+  //   'legacy/:rest*': 'docs/:rest*',
+  //   'docs/index.md': 'docs/index.md',
+  //   'docs/:rest*': ':rest*'
+  // },
   themeConfig: {
     nav: [
       { text: '首页', link: 'https://app.zerror.cc', target: '_self', rel: '' },
