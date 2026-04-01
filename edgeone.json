@@ -1,47 +1,46 @@
 {
-  "build": {
-    "outputDir": "docs/.vitepress/dist"
-  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "docs/.vitepress/dist",
   "redirects": [
     {
       "source": "/online/*",
       "destination": "/docs/online/:splat",
-      "statusCode": 301
+      "statusCode": 302
     },
     {
       "source": "/local/*",
       "destination": "/docs/local/:splat",
-      "statusCode": 301
+      "statusCode": 302
     },
     {
       "source": "/others/*",
       "destination": "/docs/others/:splat",
-      "statusCode": 301
+      "statusCode": 302
     },
     {
       "source": "/introduction",
       "destination": "/docs/introduction",
-      "statusCode": 301
+      "statusCode": 302
     },
     {
       "source": "/get-started",
       "destination": "/docs/get-started",
-      "statusCode": 301
+      "statusCode": 302
     },
     {
       "source": "/download",
       "destination": "/docs/download",
-      "statusCode": 301
+      "statusCode": 302
     },
     {
       "source": "/get-apiKey",
       "destination": "/docs/get-apiKey",
-      "statusCode": 301
+      "statusCode": 302
     },
     {
       "source": "/guide",
       "destination": "/docs/guide",
-      "statusCode": 301
+      "statusCode": 302
     }
   ]
 }
