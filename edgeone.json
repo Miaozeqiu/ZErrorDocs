@@ -1,5 +1,47 @@
 {
   "build": {
     "outputDir": "docs/.vitepress/dist"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/online/*",
+      "destination": "/docs/online/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/local/*",
+      "destination": "/docs/local/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/others/*",
+      "destination": "/docs/others/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/introduction",
+      "destination": "/docs/introduction",
+      "statusCode": 301
+    },
+    {
+      "source": "/get-started",
+      "destination": "/docs/get-started",
+      "statusCode": 301
+    },
+    {
+      "source": "/download",
+      "destination": "/docs/download",
+      "statusCode": 301
+    },
+    {
+      "source": "/get-apiKey",
+      "destination": "/docs/get-apiKey",
+      "statusCode": 301
+    },
+    {
+      "source": "/guide",
+      "destination": "/docs/guide",
+      "statusCode": 301
+    }
+  ]
 }
