@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "docs/.vitepress/dist",
+  "build": {
+    "outputDir": "docs/.vitepress/dist"
+  },
   "redirects": [
     {
       "source": "/docs",
