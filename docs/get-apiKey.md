@@ -16,7 +16,7 @@ API Key 是敏感信息，请妥善保管，不要泄露给他人。
 
 ## 阿里百炼
 > [官网链接](https://university.aliyun.com/)  
-> [云工开物计划](https://university.aliyun.com/course/promotion22-activity?clubTaskBiz=subTask..12444057..10264..&userCode=snge9dyx) 学生赠送300余额
+> [云工开物计划](https://university.aliyun.com/course/promotion23-activity?clubTaskBiz=subTask..12500002..10268..&userCode=snge9dyx) 学生赠送300余额
 
 <div class="pic">
   <img src="/images/aliyun_s1.png" alt="images/aliyun_s1.png" />
