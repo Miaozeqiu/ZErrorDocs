@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as t,ae as o}from"./chunks/framework.D7zHIyZF.js";const h=JSON.parse('{"title":"下载","description":"","frontmatter":{},"headers":[],"relativePath":"download.md","filePath":"download.md"}'),l={name:"download.md"};function n(d,a,s,_,i,c){return r(),t("div",null,[...a[0]||(a[0]=[o("",3)])])}const f=e(l,[["render",n]]);export{h as __pageData,f as default};
