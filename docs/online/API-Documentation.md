@@ -115,6 +115,8 @@ A: 多个答案用 `#` 分隔，例如：`答案1#答案2#答案3`
 
 ## OCS题库配置
 
+`data` 已增加 `v`、`images`、`suggestion_title`、`suggestion_options`。和旧配置的差别见 [题库配置修改](/online/tiku-config)。
+
 以下是用于OCS题库的完整配置JSON格式：
 
 ```json

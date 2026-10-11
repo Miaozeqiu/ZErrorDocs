@@ -45,7 +45,8 @@ export default defineConfig({
           items: [
             { text: 'OCS网课助手使用教程', link: '/online/API' },
             { text: '校园题库🔥', link: '/online/campus-question-bank' },
-            { text: '在线题库API说明', link: '/online/API-Documentation' }
+            { text: '在线题库API说明', link: '/online/API-Documentation' },
+            { text: '题库配置修改', link: '/online/tiku-config' }
           ]
         },
         {
